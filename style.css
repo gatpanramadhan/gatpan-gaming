@@ -1,0 +1,1081 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #4d869c;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33fcff;
+  border-radius: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #7ab2b2;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+header .logo {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 80px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+header ul li a:hover {
+  background: #33fcff;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+header .action .searchBx {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+header .action .searchBx i {
+  font-size: 1.4em;
+  margin: 5px;
+  color: #222;
+}
+
+header .action .searchBx input {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: #222;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .bg .content {
+  width: 50%;
+  height: 100%;
+}
+
+.banner .bg .content h2 {
+  font-size: 4em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.banner .bg .content p {
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.banner .bg .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.banner .bg img {
+  width: 800px;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .contentBx {
+  width: 50%;
+  margin: 20px;
+}
+
+.about .contentBx h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .contentBx p {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .contentBx a:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.games {
+  padding: 0px 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.games h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.games ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.games ul li {
+  list-style: none;
+  margin: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.games ul li.active {
+  background: #33fcff;
+  color: #222;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.games .cardBx {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.games .cardBx .card {
+  border-radius: 10px;
+  width: 280px;
+  margin: 20px 40px;
+  background: #6295a2;
+  overflow: hidden;
+}
+
+.games .cardBx .card img {
+  width: 100%;
+  height: 250;
+  object-fit: cover;
+}
+
+.games .cardBx .card .content {
+  padding: 10px;
+}
+
+.games .cardBx .card .content h4 {
+  color: #fff;
+  margin: 15px 0;
+}
+
+.games .cardBx .card .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.games .cardBx .card .progress-line span {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  background: #33fcff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #33fcff;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #4d869c;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33fcff;
+  border-radius: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #7ab2b2;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+
+header .logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 80px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+header ul li a:hover {
+  background: #33fcff;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+header .action .searchBx {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+header .action .searchBx i {
+  font-size: 1.4em;
+  margin: 5px;
+  color: #222;
+}
+
+header .action .searchBx input {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: #222;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .bg .content {
+  width: 50%;
+  height: 100%;
+}
+
+.banner .bg .content h2 {
+  font-size: 4em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.banner .bg .content p {
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.banner .bg .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.banner .bg img {
+  width: 800px;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .contentBx {
+  width: 50%;
+  margin: 20px;
+}
+
+.about .contentBx h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .contentBx p {
+  max-width: 600px;
+  text-align: justify;
+  font-size: 1em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.about .contentBx a:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.games {
+  padding: 0px 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.games h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.games ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.games ul li {
+  list-style: none;
+  margin: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.games ul li.active {
+  background: #33fcff;
+  color: #222;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.games .cardBx {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.games .cardBx .card {
+  border-radius: 10px;
+  width: 280px;
+  margin: 20px 40px;
+  background: #6295a2;
+  overflow: hidden;
+}
+
+.games .cardBx .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.games .cardBx .card .content {
+  padding: 10px;
+}
+
+.games .cardBx .card .content h4 {
+  color: #fff;
+  margin: 15px 0;
+}
+
+.games .cardBx .card .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.games .cardBx .card .progress-line span {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  background: #33fcff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #33fcff;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.games .cardBx .card .info {
+  border-top: 2px solid #a0deff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.games .cardBx .card .info p {
+  color: #fff;
+  font-size: 1em;
+}
+
+.games .cardBx .card .info p span {
+  color: #33fcff;
+}
+
+.games .cardBx .card .info a {
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 20px 0;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.games .cardBx .card .info a:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.games .cardBx .card.hide {
+  display: none;
+}
+
+.tournaments {
+  width: 100%;
+  padding: 0px 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tournaments h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.tournaments .boxBx {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tournaments .boxBx .box {
+  border-radius: 10px;
+  width: 350px;
+  margin: 20px 40px;
+  background: #6295a2;
+  overflow: hidden;
+}
+
+.tournaments .boxBx .box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.tournaments .boxBx .box .content {
+  padding: 10px;
+}
+
+.tournaments .boxBx .box .content h4 {
+  color: #fff;
+  margin: 15px 0;
+}
+
+.tournaments .boxBx .box h4 span {
+  color: #33fcff;
+}
+
+.tournaments .boxBx .box .content p {
+  color: #fff;
+  text-align: justify;
+  margin-top: 10px 0;
+}
+
+.tournaments .boxBx .box .content .btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tournaments .boxBx .box .content .watch {
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 20px 0;
+  background-color: #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #134b70;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.tournaments .boxBx .box .content .watch:hover {
+  border: 1px solid #a0deff;
+  background: none;
+  color: #fff;
+  box-shadow: none;
+}
+
+.tournaments .boxBx .box .content .join {
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 20px 0;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.tournaments .boxBx .box .content .join:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+}
+
+.contact {
+  padding: 20px 100px;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contact .form {
+  width: 50%;
+  margin: 30px;
+}
+
+.contact .form h1 {
+  color: #fff;
+}
+
+.contact .form .inputBx {
+  margin: 20px 0;
+}
+
+.contact .form .inputBx p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.contact .form .inputBx input,
+.contact .form .inputBx textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background: #6295a2;
+  min-height: 15px;
+  font-size: 1.1em;
+}
+
+.contact .form .inputBx textarea {
+  height: 200px;
+}
+
+.contact .form .inputBx input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  outline: none;
+  background: transparent;
+  border: 2px solid #a0deff;
+  text-decoration: none;
+  font-weight: 700;
+  width: 150px;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.contact .form .inputBx input[type="submit"]:hover {
+  background: #33fcff;
+  border: none;
+  color: #333;
+  box-shadow: 0 0 10px #a0deff;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background: #6295a2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .info .logo {
+  color: #fff;
+  position: relative;
+  text-align: none;
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 300px;
+}
+
+footer .info p {
+  color: #fff;
+  margin-right: 300px;
+}
+
+footer .info ul {
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .info ul li {
+  list-style: none;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #33fcff;
+}
+
+footer .info ul li:hover {
+  background: #33fcff;
+  border: none;
+  box-shadow: 0 0 10px #33fcff;
+}
+
+footer .info ul li a i {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+footer .info ul li:hover a i {
+  color: #222;
+}
+
+.animeX {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.animeX.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 7px 50px;
+  }
+
+  .banner,
+  .about,
+  .games,
+  .tournaments {
+    padding: 0px 50px;
+  }
+
+  .banner .bg .content h2 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 7px 20px;
+  }
+
+  .banner,
+  .about,
+  .games,
+  .tournaments {
+    padding: 0px 20px;
+  }
+
+  header ul li {
+    margin-left: 40px;
+  }
+
+  .banner .bg .content h2 {
+    font-size: 2.5em;
+  }
+
+  .about .contentBx h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 7px 10px;
+  }
+
+  header .nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  header ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .banner,
+  .about,
+  .games,
+  .tournaments {
+    padding: 0px 10px;
+  }
+
+  .banner .bg img {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about .contentBx {
+    width: 100%;
+    text-align: center;
+  }
+
+  .games .cardBx,
+  .tournaments .boxBx {
+    flex-direction: column;
+  }
+
+  .games .cardBx .card,
+  .tournaments .boxBx .box {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #222;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  header .nav.active {
+    display: flex;
+  }
+
+  header .nav li {
+    margin: 20px;
+  }
+
+  header .nav li a {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  .toggleMenu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(img/menu.webp);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .toggleMenu.active {
+    background: url(img/close.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .banner .bg img {
+    position: absolute;
+  }
+
+  .banner .bg .content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 134, 156, 0.5);
+    padding: 20px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about .contentBx {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact .form {
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+  }
+
+  .contact .form h1 {
+    text-align: center;
+  }
+
+  footer .info {
+    flex-direction: column;
+  }
+}
